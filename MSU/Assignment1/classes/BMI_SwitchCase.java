@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class BMI_SwitchCase 
 {
-    public static void main(String[] args) throws InterruptedException 
+    public void switchCase()
     {
         System.out.print("\033[H\033[2J");
         System.out.flush();      
@@ -62,7 +62,7 @@ public class BMI_SwitchCase
                 case 2:
                     System.out.printf("Your BMI is %.0f", BMI);
                     System.out.println("\nClassification: Normal.");
-                    System.out.println("\nComputer advice:\nGreaet, you're finally normal.");
+                    System.out.println("\nComputer advice:\nGreat, you're finally normal.");
                     break;
                 case 3:
                     System.out.printf("Your BMI is %.0f", BMI);
