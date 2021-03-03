@@ -2,8 +2,9 @@ package MSU.Assignment1.classes;
 
 import java.util.Scanner;
 
-public class BMI_SwitchCase {
-        public static void main(String[] args) throws InterruptedException 
+public class BMI_SwitchCase 
+{
+    public static void main(String[] args) throws InterruptedException 
     {
         System.out.print("\033[H\033[2J");
         System.out.flush();      
@@ -35,42 +36,48 @@ public class BMI_SwitchCase {
         double heightIn = height;
         double weightIn = weight;
         double BMI = weightIn/((heightIn/100)*(heightIn/100));
+        // int BMI = (int) Math. round(inBMI);
 
         System.out.print("\033[H\033[2J");
         System.out.flush();      
           
         if (BMI > 0)
         {
-            if (BMI < 16) 
+            switch (
+                (BMI < 16) ? 0 :
+                (BMI > 15 && BMI < 20) ? 1 :
+                (BMI > 19 && BMI < 25) ? 2 :
+                (BMI > 24 && BMI < 31) ? 3 :
+                (BMI > 30) ? 4 : 4)
             {
-                System.out.printf("Your BMI is %.0f", BMI);
-                System.out.println("\n\nERROR: Your BMI is off chart!\nPlease provide the valid input!!");
-            }  
-            else if (BMI > 15 && BMI < 20) 
-            {
-                System.out.printf("Your BMI is %.0f", BMI);
-                System.out.printf("\nClassification: Underweight!");
-                System.out.println("\nComputer advice:\nYou should start calling yourself 'stick'.");
-            } 
-            else if (BMI > 19 && BMI < 25) 
-            {
-                System.out.printf("Your BMI is %.0f", BMI);
-                System.out.println("\nClassification: Normal.");
-                System.out.println("\nComputer advice:\nCongratulation, you're finally normal.");
-            } 
-            else if (BMI > 24 && BMI < 31) 
-            {
-                System.out.printf("Your BMI is %.0f", BMI);
-                System.out.println("\nClassification: Overweight!");
-                System.out.println("\nComputer advice:\nCongratulation, you earned a honorary title 'Fatso'.");
-            } 
-            else 
-            {
-                System.out.printf("Your BMI is %.0f", BMI);
-                System.out.println("\nClassification: Obese!!");
-                System.out.println("\nComputer advice:\nYou're a monster!! I don't know what you've become..");
+                case 0:
+                    System.out.printf("Your BMI is %.0f", BMI);
+                    System.out.println("\n\nERROR: Your BMI is off chart!\nPlease provide the valid input!!");
+                    break;
+                case 1:
+                    System.out.printf("Your BMI is %.0f", BMI);
+                    System.out.printf("\nClassification: Underweight!");
+                    System.out.println("\nComputer advice:\nYou should start calling yourself 'stick'.");
+                    break;
+                case 2:
+                    System.out.printf("Your BMI is %.0f", BMI);
+                    System.out.println("\nClassification: Normal.");
+                    System.out.println("\nComputer advice:\nCongratulation, you're finally normal.");
+                    break;
+                case 3:
+                    System.out.printf("Your BMI is %.0f", BMI);
+                    System.out.println("\nClassification: Overweight!");
+                    System.out.println("\nComputer advice:\nCongratulation, you earned a honorary title 'Fatso'.");
+                    break;                    
+                case 4:
+                    System.out.printf("Your BMI is %.0f", BMI);
+                    System.out.println("\nClassification: Obese!!");
+                    System.out.println("\nComputer advice:\nYou're a monster!! I don't know what you've become..");
+                    break;
             }
         }
         scan.close();
     }
 }
+
+
