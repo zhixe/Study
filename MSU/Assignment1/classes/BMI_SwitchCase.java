@@ -62,17 +62,17 @@ public class BMI_SwitchCase
                 case 2:
                     System.out.printf("Your BMI is %.0f", BMI);
                     System.out.println("\nClassification: Normal.");
-                    System.out.println("\nComputer advice:\nCongratulation, you're finally normal.");
+                    System.out.println("\nComputer advice:\nGreaet, you're finally normal.");
                     break;
                 case 3:
                     System.out.printf("Your BMI is %.0f", BMI);
                     System.out.println("\nClassification: Overweight!");
-                    System.out.println("\nComputer advice:\nCongratulation, you earned a honorary title 'Fatso'.");
+                    System.out.println("\nComputer advice:\nCongratulation, you earned a honorary title 'Fat-Ass'.");
                     break;                    
                 case 4:
                     System.out.printf("Your BMI is %.0f", BMI);
                     System.out.println("\nClassification: Obese!!");
-                    System.out.println("\nComputer advice:\nYou're a monster!! I don't know what you've become..");
+                    System.out.println("\nComputer advice:\nYou're a monster!! I don't know what you had become..");
                     break;
             }
         }
