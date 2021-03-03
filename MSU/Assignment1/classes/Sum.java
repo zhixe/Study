@@ -3,34 +3,27 @@ package MSU.Assignment1.classes;
 import java.util.Scanner;
 
 public class Sum {
+    // "throws InterruptedException" if thread is interrupted, then clear the interrupted status and execute the process.
     public static void main(String[] args) throws InterruptedException
     {        
-        // Flush out the previous console screen
-        System.out.print("\033[H\033[2J");  // "\033[H" It moves the cursor at the top left corner of the screen or console. "\033[2J" It clears the screen from the cursor to the end of the screen.
-        System.out.flush();
-                
-        // Display the sum output
-        System.out.println("The sum of number is " + sumNumbers());
+        System.out.print("\033[H\033[2J"); // moves the cursor at the top left corner of the screen or console and clears the screen from the cursor to the end of the screen.
+        System.out.flush(); // flush out the previous console screen.   
+        System.out.println("The sum of number is " + sumNumbers()); // print out the main display for sumNumbers result.
     }
 
+    // "throws InterruptedException" if thread is interrupted, then clear the interrupted status and execute the process.
     private static int sumNumbers() throws InterruptedException
     {
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
-        System.out.println("Type any integer value and press enter, then type another integer to stack it.\nType 0 to end the program and display the output. ");
+        System.out.print("\033[H\033[2J"); // moves the cursor at the top left corner of the screen or console and clears the screen from the cursor to the end of the screen.
+        System.out.flush(); // flush out the previous console screen. 
+        System.out.flush(); // flush out the previous console screen. 
+        System.out.println("Type any integer value and press enter, then type another integer to stack it.\nType 0 to end the program and display the output. "); // print out the main instruction to the user.
         
-        Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in); // get the input from the user.
+        int sum = 0, number; // assign sum as integer variable and set the value to 0.
+        while((number = scan.nextInt()) != 0) sum += number; // while looping the scanner process, if the value of condition doesn't match to 0, then sum the current value and run the next statement. The process repeats until the user type in 0 value.
 
-        // Declare variables as integer and set init sum as 0
-        int sum = 0, number;
-
-        // Loop the scanner process, if the value condition doesn't match 0, then sum the current value and run the next statement, repeat until user type in the 0 value
-        while((number = scan.nextInt()) != 0) sum += number;
-
-        // Close the Scanner input method to avoid resource leak
-        scan.close();
-
-        // Return the sum value
-        return sum;
+        scan.close(); // close the Scanner class to avoid resource leak.
+        return sum; // return the sum value.
     }    
 }
