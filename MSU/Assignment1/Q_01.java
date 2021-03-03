@@ -5,6 +5,7 @@ import MSU.Assignment1.classes.Sum;
 
 public class Q_01
 {
+    // "throws InterruptedException" if thread is interrupted, then clear the interrupted status and execute the process. This operation was used when using the TimeUnit class. 
     public static void main(String[] args) throws InterruptedException
     {        
         System.out.print("\033[H\033[2J");
