@@ -1,8 +1,8 @@
 package MSU.Assignment1; // set current directory
 
-import java.util.concurrent.TimeUnit;
-import MSU.Assignment1.classes.BMI;
-import MSU.Assignment1.classes.BMI_SwitchCase;
+import java.util.concurrent.TimeUnit; // import timeunit class
+import MSU.Assignment1.classes.BMI; /// import custom BMI class
+import MSU.Assignment1.classes.BMI_SwitchCase; // import custom BMI_SwitchCase class
 
 public class Q_03
 {

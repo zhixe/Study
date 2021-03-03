@@ -1,6 +1,6 @@
-package MSU.Assignment1.classes;
+package MSU.Assignment1.classes; // set current directory
 
-import java.util.Scanner;
+import java.util.Scanner; // import scanner class
 
 public class Sum {
     // "throws InterruptedException" if thread is interrupted, then clear the interrupted status and execute the process.
