@@ -3,7 +3,7 @@ package MSU.Assignment1.classes; // set current directory
 import java.util.Scanner; // import scanner class
 
 public class Sum {
-    // "throws InterruptedException" if thread is interrupted, then clear the interrupted status and execute the process.
+    // "throws InterruptedException" if thread is interrupted, then clear the interrupted status and execute the process. This operation was used when using the TimeUnit class. 
     public static void main(String[] args) throws InterruptedException
     {        
         System.out.print("\033[H\033[2J"); // moves the cursor at the top left corner of the screen or console and clears the screen from the cursor to the end of the screen.

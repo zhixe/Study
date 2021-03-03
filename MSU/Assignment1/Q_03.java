@@ -6,6 +6,7 @@ import MSU.Assignment1.classes.BMI_SwitchCase; // import custom BMI_SwitchCase c
 
 public class Q_03
 {
+    // "throws InterruptedException" if thread is interrupted, then clear the interrupted status and execute the process. This operation was used when using the TimeUnit class. 
     public static void main(String[] args) throws InterruptedException 
     {
         // call BMI class -- uses nested if statement.
