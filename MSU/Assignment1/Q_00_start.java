@@ -34,23 +34,18 @@ public class Q_00_start {
 
             int input = scan.nextInt();
 
-            if(input < 1 || input > 6) 
-            {          
-                if(input > 0 && input < 7)
-                {
-                    repeat = extracted(repeat, input);
-                    return;
-                }
-                else
-                {
-                    System.out.print("\033[H\033[2J");
-                    System.out.flush();
-                    System.out.println("Dude! you entered the wrong integer!\nPlease try again and choose integer from 1 to 6 only:");
-                }
+            if(input > 0 && input < 7)
+            {
+                repeat = extracted(repeat, input);
             }
-
+            else if(input < 1 || input > 6) 
+            {
+                System.out.print("\033[H\033[2J");
+                System.out.flush();
+                System.out.println("Dude! you entered the wrong value!\nPlease try again and choose integer from 1 to 6 only:");
+                break;
+            }
             scan.close();
-            
         } while(repeat);
     }
 

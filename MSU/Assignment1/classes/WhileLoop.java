@@ -4,8 +4,8 @@ import java.util.concurrent.TimeUnit;
 
 public class WhileLoop {
     // "throws InterruptedException" if thread is interrupted, then clear the interrupted status and execute the process. This operation was used when using the TimeUnit class. 
-    public static void main(String[] args) throws InterruptedException 
-
+    // public static void main(String[] loop) throws InterruptedException 
+    public void loop() throws InterruptedException
     {
         System.out.print("\033[H\033[2J");
         System.out.flush();
