@@ -56,24 +56,30 @@ public class Q_00_start {
             case 1:
                 Q_01.Q1();
                 break;
+
             case 2:
                 Q_02.Q2();
                 break;
+
             case 3:
                 Q_03.Q3();
                 break;
+
             case 4:
                 Q_04.Q4();
                 break;
+
             case 5:
                 Q_05.Q5();
                 break;
+
             case 6:
                 System.out.print("\033[H\033[2J");
                 System.out.flush();
                 System.out.println("Doggo: Goodbye my friend!");
                 TimeUnit.SECONDS.sleep(10);
-                break;                
+                break;    
+                            
             default:
                 repeat = true;
         }

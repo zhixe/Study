@@ -41,6 +41,8 @@ public class Q_04 {
             TimeUnit.SECONDS.sleep(4); // set the console to sleep for 4 seconds.
             second.switchCase(); // invoke variable of second and execute the switchCase method from BMI_SwitchCase class.
             TimeUnit.SECONDS.sleep(3); // set the console to sleep for 3 seconds.
+            break;
+            
          case 3:
             System.out.print("\033[H\033[2J");
             System.out.flush();

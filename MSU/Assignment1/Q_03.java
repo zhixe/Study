@@ -33,6 +33,7 @@ public class Q_03
                 main1.ifNested(); // invoke variable of first and execute the ifNested method from BMI class.
                 TimeUnit.SECONDS.sleep(3); // set the console to sleep for 3 seconds.
                 break;
+
             case 2:
                 BMI_SwitchCase main2 = new BMI_SwitchCase(); // assign second to BMI_SwitchCase class as the new operator instantiates the BMI_SwitchCase method
                 System.out.print("\033[H\033[2J"); // moves the cursor at the top left corner of the screen or console and clears the screen from the cursor to the end of the screen.
@@ -42,6 +43,7 @@ public class Q_03
                 main2.switchCase(); // invoke variable of second and execute the switchCase method from BMI_SwitchCase class.
                 TimeUnit.SECONDS.sleep(3); // set the console to sleep for 3 seconds.
                 break;
+                
             case 3:
                 System.out.print("\033[H\033[2J");
                 System.out.flush();
