@@ -15,7 +15,7 @@ public class Q_03
         System.out.println("Choose type of program to run:\n");
         System.out.print("[1] Nested If Statement\n");
         System.out.print("[2] Switch Case Statement\n");
-        System.out.print("[3] Exit the program\n");
+        System.out.print("[3] Exit Cheap App\n");
         int inputMain = scan.nextInt();
 
         switch 

@@ -17,7 +17,7 @@ public class Q_00_start {
         System.out.println("############################################");
         System.out.println("########## BUILT FOR CHEAP PEOPLE ##########");
         System.out.println("############################################");
-        TimeUnit.SECONDS.sleep(1);
+        TimeUnit.SECONDS.sleep(10);
 
         Scanner scan = new Scanner(System.in);
         boolean repeat;
@@ -87,7 +87,7 @@ public class Q_00_start {
         System.out.println("App [3]: Question 3");
         System.out.println("App [4]: Question 4");
         System.out.println("App [5]: Question 5");
-        System.out.println("App [6]: Exit the program");
+        System.out.println("App [6]: Exit Cheap App");
         return null;
     }
 }
