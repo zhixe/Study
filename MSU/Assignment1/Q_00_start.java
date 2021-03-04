@@ -27,7 +27,7 @@ public class Q_00_start {
             System.out.print("\033[H\033[2J");
             System.out.flush();            
             repeat = false;
-            System.out.println("#######[OOP ASSIGNMENT 1]#######");
+            System.out.println("#######[OOP ASSIGNMENT 1]#######\n");
             System.out.println("Please choose which app to run.");
             System.out.println("Choose integer from 1 to 5:");
             displayInstructions();
@@ -71,7 +71,7 @@ public class Q_00_start {
             case 6:
                 System.out.print("\033[H\033[2J");
                 System.out.flush();
-                System.out.println("Doggo: Goodbye friend!");
+                System.out.println("Doggo: Goodbye my friend!");
                 TimeUnit.SECONDS.sleep(10);
                 break;                
             default:
