@@ -1,10 +1,9 @@
 package MSU.Assignment1.classes;
-
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 public class FahrenhietToCelsius {
-    public static void main(String[] Strings) throws InterruptedException 
+    public void fahcel() throws InterruptedException
     {
         System.out.print("\033[H\033[2J");
         System.out.flush(); 
@@ -29,13 +28,13 @@ public class FahrenhietToCelsius {
         System.out.flush();
         if (fahrenheit3 > normal)
         {
-            System.out.println("Therefore, " + fahrenheit3 + " degree of Fahrenheit is above the human body temperature " + normal + " degree of Fahrenheit!");
+            System.out.println("Therefore, " + fahrenheit3 + " degree of Fahrenheit is above the human body temperature, " + normal + " degree of Fahrenheit!");
         } else if (fahrenheit3 < normal)
         {
-            System.out.println("Therefore, " + fahrenheit3 + " degree of Fahrenheit is below the human body temperature " + normal + " degree of Fahrenheit!"); 
+            System.out.println("Therefore, " + fahrenheit3 + " degree of Fahrenheit is below the human body temperature, " + normal + " degree of Fahrenheit!"); 
         } else
         {
-            System.out.println("Therefore, " + fahrenheit3 + " degree of Fahrenheit is matching with the human body temperature " + normal + " degree of Fahrenheit."); 
+            System.out.println("Therefore, " + fahrenheit3 + " degree of Fahrenheit is matching with the human body temperature, " + normal + " degree of Fahrenheit."); 
         }
 
         scan.close();  

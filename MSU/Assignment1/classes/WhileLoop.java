@@ -1,10 +1,11 @@
 package MSU.Assignment1.classes;
-
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 public class WhileLoop {
+    // "throws InterruptedException" if thread is interrupted, then clear the interrupted status and execute the process. This operation was used when using the TimeUnit class. 
     public static void main(String[] args) throws InterruptedException 
+
     {
         System.out.print("\033[H\033[2J");
         System.out.flush();
@@ -23,7 +24,7 @@ public class WhileLoop {
                 TimeUnit.SECONDS.sleep(2);
                 System.exit(0);
             }
-            else if(value == 1 || value == 2 || value == 3)
+            else if(value > 0 && value < 4)
             {
                 System.out.print("\033[H\033[2J");
                 System.out.flush();

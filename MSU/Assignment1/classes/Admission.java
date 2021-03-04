@@ -1,9 +1,9 @@
 package MSU.Assignment1.classes;
-
 import java.util.Scanner;
 
 public class Admission {
-    public static void main(String[] args) throws InterruptedException 
+    public void ifNested()
+    // public static void main(String[] ifNested) throws InterruptedException
     {
         System.out.print("\033[H\033[2J");
         System.out.flush();

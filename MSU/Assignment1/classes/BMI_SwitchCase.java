@@ -1,9 +1,10 @@
 package MSU.Assignment1.classes;
-
 import java.util.Scanner;
 
 public class BMI_SwitchCase 
 {
+    // uncomment the comment below for debugging purpose.
+    // public static void main(String[] args)    
     public void switchCase()
     {
         System.out.print("\033[H\033[2J");
@@ -43,12 +44,14 @@ public class BMI_SwitchCase
           
         if (BMI > 0)
         {
-            switch (
+            switch 
+            (
                 (BMI < 16) ? 0 :
                 (BMI > 15 && BMI < 20) ? 1 :
                 (BMI > 19 && BMI < 25) ? 2 :
                 (BMI > 24 && BMI < 31) ? 3 :
-                (BMI > 30) ? 4 : 4)
+                (BMI > 30) ? 4 : 4
+            )
             {
                 case 0:
                     System.out.printf("Your BMI is %.0f", BMI);

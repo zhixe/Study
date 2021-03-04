@@ -1,12 +1,12 @@
 package MSU.Assignment1;
-
 import MSU.Assignment1.classes.FahrenhietToCelsius;
 import java.util.concurrent.TimeUnit;
 
 public class Q_02 
 {
-    public static void main(String[] args) throws InterruptedException 
+    public static void Q2() throws InterruptedException 
     {
+        FahrenhietToCelsius main = new FahrenhietToCelsius();
         System.out.print("\033[H\033[2J");
         System.out.flush();
 
@@ -14,7 +14,7 @@ public class Q_02
         TimeUnit.SECONDS.sleep(6);
         
         // Call FahrenhietToCelsius class
-        FahrenhietToCelsius.main(args);
+        main.fahcel();
     }    
 }
 

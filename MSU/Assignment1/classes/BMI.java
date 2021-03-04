@@ -1,9 +1,10 @@
 package MSU.Assignment1.classes;
-
 import java.util.Scanner;
 
 public class BMI 
 {
+    // uncomment the comment below for debugging purpose.
+    // public static void main(String[] args)
     public void ifNested()
     {
         System.out.print("\033[H\033[2J");
