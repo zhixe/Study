@@ -1,5 +1,5 @@
-package MSU.Assignment1.classes;
-import java.util.Scanner;
+package MSU.Assignment1.classes; // set current directory
+import java.util.Scanner; // import scanner class from java utils
 
 public class Admission {
     public void ifNested()

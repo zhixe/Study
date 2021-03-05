@@ -1,8 +1,8 @@
-package MSU.Assignment1.classes;
-import java.util.Scanner;
-import java.util.concurrent.TimeUnit;
+package MSU.Assignment1.classes; // set current directory
+import java.util.Scanner; // import scanner class from java utils
+import java.util.concurrent.TimeUnit; // import timeunit class from java utils concurrent
 
-public class WhileLoop {
+public class Input123 {
     // "throws InterruptedException" if thread is interrupted, then clear the interrupted status and execute the process. This operation was used when using the TimeUnit class. 
     // public static void main(String[] loop) throws InterruptedException 
     public void loop() throws InterruptedException

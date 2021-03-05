@@ -1,7 +1,6 @@
-package MSU.Assignment1.classes;
-import java.util.Scanner;
-
-public class BMI 
+package MSU.Assignment1.classes; // set current working directory
+import java.util.Scanner; // import Scanner class from java utils
+public class BMI_ifNested 
 {
     // uncomment the comment below for debugging purpose.
     // public static void main(String[] args)

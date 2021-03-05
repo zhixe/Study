@@ -1,6 +1,6 @@
-package MSU.Assignment1;
-import java.util.Scanner;
-import java.util.concurrent.TimeUnit;
+package MSU.Assignment1; // set current directory
+import java.util.Scanner; // import scanner class from java utils
+import java.util.concurrent.TimeUnit; // import timeunit class from java utils concurrent
 
 public class Q_00_start {
     public static void main(String[] mainPage) throws InterruptedException 
@@ -17,7 +17,7 @@ public class Q_00_start {
         System.out.println("############################################");
         System.out.println("########## BUILT FOR CHEAP PEOPLE ##########");
         System.out.println("############################################");
-        TimeUnit.SECONDS.sleep(10);
+        TimeUnit.SECONDS.sleep(1);
 
         Scanner scan = new Scanner(System.in);
         boolean repeat;
@@ -29,7 +29,7 @@ public class Q_00_start {
             repeat = false;
             System.out.println("#######[OOP ASSIGNMENT 1]#######\n");
             System.out.println("Please choose which app to run.");
-            System.out.println("Choose integer from 1 to 5:");
+            System.out.println("Choose integer from 1 to 6:");
             displayInstructions();
 
             int input = scan.nextInt();
@@ -42,6 +42,7 @@ public class Q_00_start {
             {
                 System.out.print("\033[H\033[2J");
                 System.out.flush();
+                System.out.println("#######[OOP ASSIGNMENT 1]#######\n");
                 System.out.println("Dude! you entered the wrong value!\nPlease try again and choose integer from 1 to 6 only:");
                 break;
             }

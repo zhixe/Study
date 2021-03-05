@@ -1,8 +1,8 @@
-package MSU.Assignment1;
-import java.util.Scanner;
-import java.util.concurrent.TimeUnit;
-import MSU.Assignment1.classes.Admission;
-import MSU.Assignment1.classes.Admission_SwitchCase;
+package MSU.Assignment1; // set current directory
+import java.util.Scanner; // import scanner class from java utils
+import java.util.concurrent.TimeUnit; // import timeunit class from java utils concurrent
+import MSU.Assignment1.classes.Admission; // import Admission class from local directory
+import MSU.Assignment1.classes.Admission_SwitchCase; // import Admission_SwitchCase class from local directory
 
 public class Q_04 {
    public static void Q4() throws InterruptedException 

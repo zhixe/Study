@@ -1,6 +1,6 @@
-package MSU.Assignment1;
-import MSU.Assignment1.classes.FahrenhietToCelsius;
-import java.util.concurrent.TimeUnit;
+package MSU.Assignment1; // set current directory
+import java.util.concurrent.TimeUnit; // import timeunit class from java utils concurrent
+import MSU.Assignment1.classes.FahrenhietToCelsius; // import FahrenhietToCelsius class from local directory
 
 public class Q_02 
 {

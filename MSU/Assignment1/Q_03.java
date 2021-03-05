@@ -1,8 +1,8 @@
 package MSU.Assignment1; // set current directory
-import java.util.Scanner;
-import java.util.concurrent.TimeUnit; // import timeunit class
-import MSU.Assignment1.classes.BMI; /// import custom BMI class
-import MSU.Assignment1.classes.BMI_SwitchCase; // import custom BMI_SwitchCase class
+import java.util.Scanner; // import scanner class from java utils
+import java.util.concurrent.TimeUnit; // import timeunit class from java utils concurrent
+import MSU.Assignment1.classes.BMI_ifNested; // import BMI class from local directory
+import MSU.Assignment1.classes.BMI_SwitchCase; // import BMI_SwitchCase class from local directory
 
 public class Q_03
 {
@@ -25,7 +25,7 @@ public class Q_03
         )
         {
             case 1:
-                BMI main1 = new BMI(); // assign first to BMI class as the new operator instantiates the BMI method
+                BMI_ifNested main1 = new BMI_ifNested(); // assign first to BMI class as the new operator instantiates the BMI method
                 System.out.print("\033[H\033[2J"); // moves the cursor at the top left corner of the screen or console and clears the screen from the cursor to the end of the screen.
                 System.out.flush(); // flush out the previous console screen.
                 System.out.println("[OOP ASSIGNMENT 1]: QUESTION 3 - Nested If Statement\n\nWelcome my friend..\nThis cheap program will calculate your BMI."); // print out the main display for Nested If Statement.
@@ -55,103 +55,3 @@ public class Q_03
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // public static void main(String[] args) throws InterruptedException 
-    // {
-    //     System.out.print("\033[H\033[2J");
-    //     System.out.flush(); 
-        
-    //     process: 
-    //     for(int i = 0; i < 2; ++i)
-    //     {
-    //         boolean executeProg = true;
-    //         if(i < 1)
-    //         {
-    //             System.out.print("\033[H\033[2J");
-    //             System.out.flush(); 
-
-    //             System.out.println("Nested If Statement");
-    //             TimeUnit.SECONDS.sleep(6);  
-
-    //             // Call BMI class -- uses nested if statement
-    //             BMI.main(args);
-    //             TimeUnit.SECONDS.sleep(3);
-    //             executeProg = false;
-    //             continue process;
-    //         }
-    //         if(executeProg)
-    //         {
-    //             System.out.print("\033[H\033[2J");
-    //             System.out.flush(); 
-
-    //             System.out.println("Switch Case Statement");
-    //             TimeUnit.SECONDS.sleep(6);
-
-    //             // Call BMI_SwitchCase class -- uses switch case statement
-    //             BMI_SwitchCase.main(args);
-    //             TimeUnit.SECONDS.sleep(3);  
-    //         }
-    //         executeProg = true;
-    //     }
-
-        // System.out.println("[OOP ASSIGNMENT 1]: QUESTION 3\n\nWelcome my friend..\nThis cheap program will calculate your BMI.");
-        // TimeUnit.SECONDS.sleep(6);
-        // // Call BMI_SwitchCase class -- uses switch case function
-        // BMI_SwitchCase.main(args);
-
-        // for (int i = 0; i < 2; i++) 
-        // {
-        //     if (i == 1) 
-        //     {
-        //         System.out.print("\033[H\033[2J");
-        //         System.out.flush(); 
-        //         System.out.println("Nested If Statement");
-        //         TimeUnit.SECONDS.sleep(6);              
-        //         // Call BMI class
-        //         BMI.main(args);
-        //         TimeUnit.SECONDS.sleep(3);
-        //     }
-        //     else
-        //     {
-        //         System.out.print("\033[H\033[2J");
-        //         System.out.flush(); 
-
-        //         System.out.println("Switch Case Statement");
-        //         TimeUnit.SECONDS.sleep(6);
-        //         // Call BMI_SwitchCase class -- uses switch case function
-        //         BMI_SwitchCase.main(args);
-        //         TimeUnit.SECONDS.sleep(3);
-        //     }
-        // } 
