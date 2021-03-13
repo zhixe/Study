@@ -1,7 +1,8 @@
-package MSU.Assignment1.classes; // set current directory
+package MSU.OOP.Assignment1.classes; // set current directory
 import java.util.Scanner; // import scanner class from java utils
 
-public class Admission {
+public class Admission_NestedIf 
+{
     public void ifNested()
     // public static void main(String[] ifNested) throws InterruptedException
     {
@@ -70,4 +71,3 @@ public class Admission {
        scan.close();
     }
 }
-

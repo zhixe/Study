@@ -1,8 +1,8 @@
-package MSU.Assignment1; // set current directory
+package MSU.OOP.Assignment1; // set current directory
 import java.util.Scanner; // import scanner class from java utils
 import java.util.concurrent.TimeUnit; // import timeunit class from java utils concurrent
-import MSU.Assignment1.classes.BMI_ifNested; // import BMI class from local directory
-import MSU.Assignment1.classes.BMI_SwitchCase; // import BMI_SwitchCase class from local directory
+import MSU.OOP.Assignment1.classes.BMI_NestedIf; // import BMI class from local directory
+import MSU.OOP.Assignment1.classes.BMI_SwitchCase; // import BMI_SwitchCase class from local directory
 
 public class Q_03
 {
@@ -21,16 +21,17 @@ public class Q_03
         switch 
         (
             (inputMain == 1) ? 1 :
-            (inputMain == 2) ? 2 : 2
+            (inputMain == 2) ? 2 :
+            (inputMain == 3) ? 3 : 3
         )
         {
             case 1:
-                BMI_ifNested main1 = new BMI_ifNested(); // assign first to BMI class as the new operator instantiates the BMI method
+                BMI_NestedIf main1 = new BMI_NestedIf(); // assign first to BMI class as the new operator instantiates the BMI method
                 System.out.print("\033[H\033[2J"); // moves the cursor at the top left corner of the screen or console and clears the screen from the cursor to the end of the screen.
                 System.out.flush(); // flush out the previous console screen.
                 System.out.println("[OOP ASSIGNMENT 1]: QUESTION 3 - Nested If Statement\n\nWelcome my friend..\nThis cheap program will calculate your BMI."); // print out the main display for Nested If Statement.
                 TimeUnit.SECONDS.sleep(4); // set the console to sleep for 4 seconds.
-                main1.ifNested(); // invoke variable of first and execute the ifNested method from BMI class.
+                main1.NestedIf(); // invoke variable of first and execute the ifNested method from BMI class.
                 TimeUnit.SECONDS.sleep(3); // set the console to sleep for 3 seconds.
                 break;
 

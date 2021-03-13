@@ -1,8 +1,8 @@
-package MSU.Assignment1; // set current directory
+package MSU.OOP.Assignment1; // set current directory
 import java.util.Scanner; // import scanner class from java utils
 import java.util.concurrent.TimeUnit; // import timeunit class from java utils concurrent
-import MSU.Assignment1.classes.Admission; // import Admission class from local directory
-import MSU.Assignment1.classes.Admission_SwitchCase; // import Admission_SwitchCase class from local directory
+import MSU.OOP.Assignment1.classes.Admission_NestedIf; // import Admission class from local directory
+import MSU.OOP.Assignment1.classes.Admission_SwitchCase; // import Admission_SwitchCase class from local directory
 
 public class Q_04 {
    public static void Q4() throws InterruptedException 
@@ -20,11 +20,12 @@ public class Q_04 {
       switch 
       (
          (inputMain == 1) ? 1 :
-         (inputMain == 2) ? 2 : 2
+         (inputMain == 2) ? 2 :
+         (inputMain == 3) ? 3 : 3
       )
       {
          case 1:
-         Admission first = new Admission(); // assign first to BMI class as the new operator instantiates the BMI method
+         Admission_NestedIf first = new Admission_NestedIf(); // assign first to BMI class as the new operator instantiates the BMI method
          System.out.print("\033[H\033[2J"); // moves the cursor at the top left corner of the screen or console and clears the screen from the cursor to the end of the screen.
          System.out.flush(); // flush out the previous console screen.
          System.out.println("[OOP ASSIGNMENT 1]: QUESTION 4 - Nested If Statement\n\nWelcome my friend..\nThis cheap program will calculate your college's admission status."); // print out the main display for Nested If Statement.

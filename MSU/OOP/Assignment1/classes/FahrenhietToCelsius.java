@@ -1,11 +1,9 @@
-package MSU.Assignment1.classes; // set current directory
-import java.util.Scanner; // import scanner class from java utils
-import java.util.concurrent.TimeUnit; // import timeunit class from java utils concurrent
+package MSU.OOP.Assignment1.classes; // set current directory.
+import java.util.Scanner; // import scanner class from java utils.
+import java.util.concurrent.TimeUnit; // import timeunit class from java utils concurrent.
 public class FahrenhietToCelsius 
 {
-    /* "throws InterruptedException" if thread is interrupted, then clear the interrupted status and execute the process. This operation is used for TimeUnit class. Uncomment "public static void main()" below for testing & debugging purpose. */
-    // public static void main(String[] args) throws InterruptedException 
-    // comment below line for testing & debugging purpose, and uncomment it to use it for main class from another place.
+    // throws InterruptedException if thread is interrupted, then clear the interrupted status and execute the process. This operation is used for TimeUnit class.
     public void fahcel() throws InterruptedException 
     {
         System.out.print("\033[H\033[2J"); // moves the cursor at the top left corner of the screen or console and clears the screen from the cursor to the end of the screen.

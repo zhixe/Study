@@ -1,8 +1,8 @@
-package MSU.Assignment1; // set current directory
+package MSU.OOP.Assignment1; // set current directory
 import java.util.Scanner; // import scanner class from java utils
 import java.util.concurrent.TimeUnit; // import timeunit class from java utils concurrent
-
-public class Q_00_start {
+public class Q_00_start 
+{
     public static void main(String[] mainPage) throws InterruptedException 
     {
         System.out.print("\033[H\033[2J");

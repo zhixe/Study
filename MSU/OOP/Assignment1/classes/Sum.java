@@ -1,4 +1,4 @@
-package MSU.Assignment1.classes; // set current working directory.
+package MSU.OOP.Assignment1.classes; // set current working directory.
 import java.util.Scanner; // import Scanner class from java utils.
 public class Sum
 {

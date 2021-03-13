@@ -1,6 +1,6 @@
-package MSU.Assignment1; // set current working directory
+package MSU.OOP.Assignment1; // set current working directory
 import java.util.concurrent.TimeUnit; // import TimeUnit class from java utils concurrent
-import MSU.Assignment1.classes.Sum; // import Sum class from local directory
+import MSU.OOP.Assignment1.classes.Sum; // import Sum class from local directory
 public class Q_01
 {
     // "throws InterruptedException" if thread is interrupted, then clear the interrupted status and execute the process. This operation is used for TimeUnit class. 
