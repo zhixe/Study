@@ -1,7 +1,7 @@
 package MSU.OOP.Assignment2.classes; // Set current working directory.
 import java.util.Scanner; // Import Scanner class from java utils.
 
-public class bmi_main // Construct BMI main class for Question 2
+public class bmi_main // Construct Body Mass Index(BMI) main class for OOP A2 Question 2
 {
     public void bmi_class() // 1. Declare a method to classify the BMI category.
     {
@@ -34,22 +34,22 @@ public class bmi_main // Construct BMI main class for Question 2
 
     private static double bmi_cal() // 2. Declare a method to calculate the BMI.
     {
-        Scanner input = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in); // Assign scan as a Scanner class variable and instantiate a new object to a Scanner class constructor which initializes the new object of System.in.
 
-        System.out.print("\033[H\033[2J"); 
-        System.out.flush(); 
-        System.out.println("Please enter your weight:");
-        double weight = input.nextDouble();
+        System.out.print("\033[H\033[2J"); // Navigate the cursor to the terminal screen.
+        System.out.flush(); // Clear the terminal screen.
+        System.out.println("What is your weight in kg?"); // Print out the first instruction to the user.
+        double weight = scan.nextDouble(); // Store the input given by the user as a variable scan and define it as double data type.
 
         System.out.print("\033[H\033[2J");
         System.out.flush();
-        System.out.println("Please enter your height:");
-        double height = input.nextDouble();
+        System.out.println("What is your height in cm?"); // Print out the second instruction to the user.
+        double height = scan.nextDouble(); 
 
-        double inBMI = weight/((height/100)*(height/100));
+        double inBMI = weight/((height/100)*(height/100)); // Define inBMI as double data type and declare it as a variable. Then use variables 'height' and 'weight' to calculate the BMI value of the user.
 
-        input.close();
+        scan.close(); // close the Scanner class to avoid resource leak warning.
 
-        return inBMI;
+        return inBMI; // return inBMI value to bmi_cal() method.
     }
 }
