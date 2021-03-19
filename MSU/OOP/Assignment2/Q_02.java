@@ -1,20 +1,11 @@
-package MSU.OOP.Assignment2; // set current directory
-import java.util.concurrent.TimeUnit; // import timeunit class from java utils concurrent
-import MSU.OOP.Assignment1.classes.FahrenhietToCelsius; // import FahrenhietToCelsius class from local directory
+package MSU.OOP.Assignment2;
+import MSU.OOP.Assignment2.classes.bmi_main;
 
 public class Q_02 
 {
-    public static void Q2() throws InterruptedException 
+    public static void main(String[] args)        
     {
-        FahrenhietToCelsius main = new FahrenhietToCelsius();
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
-
-        System.out.println("[OOP ASSIGNMENT 1]: QUESTION 2\n\nWelcome my friend..\nThis cheap program will convert the input degree of Fahrenhiet into Celcius value.");
-        TimeUnit.SECONDS.sleep(6);
-        
-        // Call FahrenhietToCelsius class
-        main.fahcel();
-    }    
+        bmi_main mainCal = new bmi_main();
+        mainCal.bmi_class();
+    }
 }
-
