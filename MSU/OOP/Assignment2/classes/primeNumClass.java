@@ -1,7 +1,7 @@
 package MSU.OOP.Assignment2.classes; // Set current working directory.
 import java.util.Scanner; // Import Scanner class from java utils.
 
-public class primeNumClass // Construct evodClass class for OOP A2 Question 5
+public class primeNumClass // Construct primeNumClass class for OOP A2 Question 5
 {
     public void PrimeNumber() // Declare a method to find the prime number[s].
     {
