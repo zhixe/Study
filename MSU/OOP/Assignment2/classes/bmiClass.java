@@ -1,7 +1,7 @@
 package MSU.OOP.Assignment2.classes; // Set current working directory.
 import java.util.Scanner; // Import Scanner class from java utils.
 
-public class bmi_main // Construct Body Mass Index(BMI) class for OOP A2 Question 2
+public class bmiClass // Construct Body Mass Index(BMI) class for OOP A2 Question 2
 {
     public void bmi_class() // 1. Declare a method to classify the BMI category.
     {

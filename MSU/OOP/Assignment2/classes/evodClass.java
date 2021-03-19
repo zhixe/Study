@@ -1,7 +1,7 @@
 package MSU.OOP.Assignment2.classes;
 import java.util.Scanner;
 
-public class enoNumber 
+public class evodClass 
 {
     public void EvOdNumber()
     {
