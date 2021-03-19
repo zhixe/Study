@@ -1,5 +1,6 @@
 package MSU.OOP.Assignment2.classes;
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 public class strClass 
 {
@@ -23,7 +24,7 @@ public class strClass
 
         System.out.print("\033[H\033[2J");
         System.out.flush();
-        System.out.println("Number of Vowel[s] in the word: " + countVow(str));
+        System.out.println(str + "\n\nNumber of Vowel[s] in the word: " + countVow(str));
         System.out.println("Number of Consonant[s] in the word: " + countCon(str));
 
         scan.close(); // Close the Scanner class to avoid resource leak warning.
@@ -61,11 +62,27 @@ public class strClass
             if
             (
                 (
-                    str.charAt(b) != 'a' &&
-                    str.charAt(b) != 'e' &&
-                    str.charAt(b) != 'i' &&
-                    str.charAt(b) != 'o' && 
-                    str.charAt(b) != 'z'
+                    str.charAt(b) == 'b' ||
+                    str.charAt(b) == 'c' ||
+                    str.charAt(b) == 'd' ||
+                    str.charAt(b) == 'f' ||
+                    str.charAt(b) == 'g' ||
+                    str.charAt(b) == 'h' ||
+                    str.charAt(b) == 'j' ||
+                    str.charAt(b) == 'k' ||
+                    str.charAt(b) == 'l' ||
+                    str.charAt(b) == 'm' ||
+                    str.charAt(b) == 'n' ||
+                    str.charAt(b) == 'p' ||
+                    str.charAt(b) == 'q' ||
+                    str.charAt(b) == 'r' ||
+                    str.charAt(b) == 's' ||
+                    str.charAt(b) == 't' ||
+                    str.charAt(b) == 'v' ||
+                    str.charAt(b) == 'w' ||
+                    str.charAt(b) == 'x' ||
+                    str.charAt(b) == 'y' ||
+                    str.charAt(b) == 'z' 
                 )
             ) 
             {
@@ -75,26 +92,10 @@ public class strClass
         return count2;
     }
 
-    public static boolean isNumeric(String string) 
-    {  
-        System.out.println(String.format("Parsing string: \"%s\"", string));
-            
-        if(string == null || string.equals("")) 
-        {
-            System.out.println("String or words cannot be parsed, it is null or empty.");
-            return false;
-        }
-        
-        try 
-        {
-            int intValue = Integer.parseInt(string);
-            return true;
-        } 
-        catch (NumberFormatException e) 
-        {
-            System.out.println("String or words cannot be parsed to Integer.");
-        }
-        return false;
+    public static boolean isNumeric(String checkStr) 
+    {
+        // Checks whether if the input string is an integer or not.
+        String regex = "[0-9]+[\\.]?[0-9]*";
+        return Pattern.matches(regex, checkStr);
     }
-
 }
