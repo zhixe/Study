@@ -11,8 +11,7 @@ public class evodClass
         System.out.flush();
 
         System.out.println("Type any integer value:");
-        int num = scan.nextInt();
-                
+        int num = scan.nextInt();  
 
         System.out.print("\033[H\033[2J");
         System.out.flush();

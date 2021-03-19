@@ -10,14 +10,14 @@ public class primeNumClass
         System.out.print("\033[H\033[2J");
         System.out.flush();
 
-        int i =0;
-        int num =0;
-        String primeNumbers = "";
-
         System.out.println("Type any integer value to find the prime number[s]:");
         int n = scan.nextInt();
 
         scan.close();
+
+        int i =0;
+        int num =0;
+        String primeNumbers = "";
         
         for (i = 1; i <= n; i++)
         {

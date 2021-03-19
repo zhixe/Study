@@ -6,6 +6,6 @@ public class Q_02 // Construct java main class for OOP A2 Question 2
     public static void main(String[] args) // Compile and execute the java program.        
     {
         bmiClass mainCal = new bmiClass(); // Assign mainCal as a bmi_main class variable and instantiate a new object to a bmi_main class constructor which initializes the new object.
-        mainCal.bmi_class(); // Call the class method bmi_class() from mainCal variable. This will run the whole process of bmi_main class.
+        mainCal.bmi_class(); // Call the class method bmi_class() from mainCal variable. This will run the whole process of bmiClass class.
     }
 }
