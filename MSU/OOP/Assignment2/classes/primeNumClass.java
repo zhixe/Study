@@ -23,20 +23,20 @@ public class primeNumClass // Construct evodClass class for OOP A2 Question 5
             int counter = 0; // Define counter as integer data type and set it to 0.
             for(totalNum = i; totalNum >= 1; totalNum--) // When totalNum is set to i variable, and equal or more than 1 value, then totalNum is decreased.
             {
-                if(i % totalNum == 0) // When the remainder of i is totalNum variable and equal
+                if(i % totalNum == 0) // When the remainder of i is totalNum variable and equal to 0, then counter variable added 1 value.
                 {
                 counter = counter + 1;
                 }
             }
-            if (counter == 2)
+            if (counter == 2) // When counter variable is equal to 2 value, then result variable added i variable value and concatenate with whitespace string.
             {
                 result = result + i + " ";
             }
         }
         System.out.print("\033[H\033[2J");
         System.out.flush();
-        // Print out the prime number result.
+        
         System.out.println("The prime numbers 1 to " + num + ":");
-        System.out.println(result); 
+        System.out.println(result); // Print out the prime number result.
     }
 }
