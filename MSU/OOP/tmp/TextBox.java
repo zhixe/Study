@@ -1,5 +1,4 @@
-package MSU.OOP.Assignment1.classes;
-import MSU.OOP.Assignment1.Box;
+package MSU.OOP.tmp;
 
 public class TextBox
 {

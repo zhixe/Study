@@ -1,4 +1,4 @@
-package MSU.OOP.Assignment1;
+package MSU.OOP.tmp;
 
 public class Box 
 {
