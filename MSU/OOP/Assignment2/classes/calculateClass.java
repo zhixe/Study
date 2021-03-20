@@ -23,18 +23,24 @@ public class calculateClass // Construct calculateClass class for OOP A2 Questio
         System.out.print("\033[H\033[2J");
         System.out.flush();
         
-        System.out.println("Addition:\n" + num1 + " + " + num2 + " = " + 
-        (num1 + num2) + "\n"); //print out the 'Addition' result in integer format.
-        
-        System.out.println("Subtraction:\n" + num1 + " - " + num2 + " = " + 
-        (num1 - num2) + "\n"); //print out the 'Subtraction' result in integer format.
-                
-        System.out.println("Division:\n" + num1 + " / " + num2 + " = " + 
-        (num1 / num2) + "\n"); //print out the 'Division' result in integer format.
+        int add = num1 + num2;
+        int substract =  num1 - num2;
+        double divide = (double)num1 / (double)num2;
+        int multi = num1 * num2;
 
-        System.out.println("Multiplication:\n" + num1 + " x " + num2 + " = " + 
-        (num1 * num2) + "\n"); //print out the 'Multiplication' result in integer format.
+
+        System.out.println("Addition:\n" + num1 + " + " + num2 + " = " + add + "\n"); //print out the 'Addition' result in integer format.
+        
+        System.out.println("Subtraction:\n" + num1 + " - " + num2 + " = " + substract + "\n"); //print out the 'Subtraction' result in integer format.
+                
+        System.out.println("Division:\n" + num1 + " / " + num2 + " = " + divide + "\n"); //print out the 'Division' result in integer format.
+
+        System.out.println("Multiplication:\n" + num1 + " * " + num2 + " = " + multi + "\n"); //print out the 'Multiplication' result in integer format.
 
         scan.close(); // Close the Scanner class to avoid resource leak warning.
     }
 }
+
+
+
+

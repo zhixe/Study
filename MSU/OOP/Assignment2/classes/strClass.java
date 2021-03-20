@@ -96,3 +96,10 @@ public class strClass // Construct strClass class for OOP A2 Question 4
         return Pattern.matches(regex, checkStr); // Return integer pattern to isNumeric() method.
     }
 }
+
+
+
+
+
+
+

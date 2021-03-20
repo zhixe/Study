@@ -40,3 +40,6 @@ public class primeNumClass // Construct primeNumClass class for OOP A2 Question 
         System.out.println(result); // Print out the prime number result.
     }
 }
+
+
+

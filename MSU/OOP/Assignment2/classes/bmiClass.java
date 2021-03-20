@@ -58,3 +58,7 @@ public class bmiClass // Construct bmiClass class for OOP A2 Question 2
         return inBMI; // Return inBMI value to bmi_cal() method.
     }
 }
+
+
+
+
