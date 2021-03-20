@@ -27,7 +27,7 @@ public class Q_00_start
             System.out.print("\033[H\033[2J");
             System.out.flush();            
             repeat = false;
-            System.out.println("#######[OOP ASSIGNMENT 1]#######\n");
+            System.out.println("#######[OOP ASSIGNMENT 2]#######\n");
             System.out.println("Please choose which app to run.");
             System.out.println("Choose integer from 1 to 6:");
             displayInstructions();
@@ -42,7 +42,7 @@ public class Q_00_start
             {
                 System.out.print("\033[H\033[2J");
                 System.out.flush();
-                System.out.println("#######[OOP ASSIGNMENT 1]#######\n");
+                System.out.println("#######[OOP ASSIGNMENT 2]#######\n");
                 System.out.println("Dude! you entered the wrong value!\nPlease try again and choose integer from 1 to 6 only:");
                 break;
             }
